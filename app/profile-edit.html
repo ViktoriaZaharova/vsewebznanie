@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Vsewebznanie.com</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <a href="index.html" class="logo">
+            <img src="img/logo.svg" alt="">
+        </a>
+
+        <nav class="navigation">
+            <ul class="menu">
+                <li class="drop-item"><a href="#" class="drop-item__link">Видеокурсы</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Инъекционная косметология</a></li>
+                        <li><a href="#">Нити</a></li>
+                        <li><a href="#">Пластическая хирургия</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Вебинары</a></li>
+                <li><a href="#">Трансляции</a></li>
+                <li><a href="#">Индивидуальное обучение</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="header-nav">
+            <a href="#" class="btn-search"><img src="img/search2.svg" alt=""></a>
+
+            <div class="favorite-box">
+                <a href="#" class="btn-favorite"><img src="img/favorite2.svg" alt=""></a>
+                <div class="quantity">2</div>
+            </div>
+
+            <a href="#" class="btn-user"><img src="img/user2.svg" alt=""></a>
+        </div>
+
+        <a href="#" class="btn btn-accent">Подключить подписку</a>
+    </div>
+</header>
+
+<div class="main-videos mb-75">
+    <div class="container">
+        <ul class="breadcrumbs">
+            <li><a href="index.html">Главная страница</a></li>
+            <li><a href="#">Профиль</a></li>
+            <li><span class="nav-item">Редактирование профиля</span></li>
+        </ul>
+
+        <h1>Редактирование профиля</h1>
+
+        <div class="main-profile">
+            <form method="post" class="form main-profile__form">
+                <div class="form-box">
+                    <label>
+                        <span class="text">
+                            Номер телефона:
+                        </span>
+                        <input type="text" name="phone" required placeholder="+7 928 457 12 54">
+                    </label>
+                    <label>
+                        <span class="text">
+                            Имя:
+                        </span>
+                        <input type="text" name="name" required placeholder="Введите имя...">
+                    </label>
+                    <label>
+                        <span class="text">
+                            Фамилия:
+                        </span>
+                        <input type="text" name="first_name" placeholder="Введите фамилию...">
+                    </label>
+                    <label>
+                        <span class="text">
+                            Отчество:
+                        </span>
+                        <input type="text" name="last_name" placeholder="Введите отчество...">
+                    </label>
+                    <label>
+                        <span class="text">
+                           Специальность:
+                        </span>
+                        <input type="text" name="specialty" placeholder="Введите вашу специальность...">
+                    </label>
+                    <label>
+                        <span class="text">
+                            Электронная почта:
+                        </span>
+                        <input type="text" name="mail" placeholder="Введите e-mail...">
+                    </label>
+                </div>
+
+
+                <div class="photo-upload">
+                    <div class="icon-photo">
+                        <img src="img/user-photo.svg" alt="">
+                    </div>
+                    <label class="photo-label">
+                        <input type="file" name="photo">
+                        <span class="text">Загрузить фото</span>
+                    </label>
+                </div>
+
+                <div class="form-document">
+                    <p>Документы:</p>
+                    <strong>Загрузите с компьютера документы, подтверждающие вашу специализацию</strong>
+                    <div class="img-size">Вы можете загрузить файл в формате: JPG, PDF, PNG</div>
+
+                    <ul class="list-document">
+                        <li>
+                            <a href="#" class="links-doc color-blue" download="#">Диплом.pdf</a>
+                            <a href="#" class="btn btn-border">Удалить</a>
+                        </li>
+                    </ul>
+
+                    <label class="add-document photo-label">
+                        <input type="file" name="photo">
+                        <span class="text">Добавить документ +</span>
+                    </label>
+                </div>
+
+                <div class="form-box form-box__password">
+                        <span class="text">
+                            Изменить пароль:
+                        </span>
+                    <label class="input-group">
+                        <input type="text" name="password" placeholder="Введите пароль...">
+                        <input type="text" name="double_password" required placeholder="Введите пароль ещё раз...">
+                    </label>
+
+                </div>
+
+
+                <button type="submit" class="btn btn-accent">Сохранить изменения</button>
+
+
+            </form>
+        </div>
+
+
+    </div>
+</div>
+
+
+<footer>
+    <div class="container">
+        <div class="footer-box">
+            <div class="copyright">© 2019 ООО Онлайн-школа «Космос»</div>
+            <ul class="list-social">
+                <li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+                <li><a href="#"><img src="img/inst.svg" alt=""></a></li>
+                <li><a href="#"><img src="img/fb.svg" alt=""></a></li>
+            </ul>
+        </div>
+
+        <ul class="footer-menu">
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Авторы</a></li>
+            <li><a href="#">Сотрудничество</a></li>
+            <li><a href="#">Политика конфидециальности</a></li>
+            <li><a href="#">Пользовательское соглашение</a></li>
+            <li><a href="#">Подарочный сертификат</a></li>
+            <li><a href="#">Помощь</a></li>
+            <li><a href="#">Отзывы</a></li>
+        </ul>
+
+        <ul class="footer-menu">
+            <li><a href="#">Инъекционная косметология</a></li>
+            <li><a href="#">Нити</a></li>
+            <li><a href="#">Пластическая хирургия</a></li>
+            <li><a href="#">Вебинары</a></li>
+            <li><a href="#">Трансляции</a></li>
+            <li><a href="#">Индивидуальное обучение</a></li>
+        </ul>
+
+        <a href="#" class="btn btn-accent">Подключить подписку</a>
+    </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
