@@ -85,6 +85,43 @@
       .icon
         margin: 7px 16px 0 0
 
+  .main-profile__form label
+    font-size: 15px
+    input
+      width: 340px
+      font-size: 15px
+
+  .main-profile__form .text
+    min-width: 160px
+
+  .box-profile
+    width: 240px
+    height: 192px
+
+  .menu-cabinet li
+    margin: 0 0 52px
+
+  .attention-box
+    padding: 20px 35px 36px 29px
+
+  .btn-subscribe
+    font-size: 15px
+
+  .sidebar
+    max-width: 240px
+
+  .wrapper
+    width: calc(100% - 240px)
+
+  .it-category
+    padding: 5px
+
+  .course__slider .product-box
+    margin: 0 auto
+
+  .form-box
+    max-width: 430px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1100px)
   .video-course__box
@@ -96,7 +133,7 @@
   .breadcrumbs
     margin: 0 0 52px
     li
-      a
+      a, span
         font-size: 14px
 
   .pagination-wrapper
@@ -104,6 +141,34 @@
 
   .mb-75
     margin: 0 0 64px
+
+  .category-profile
+    justify-content: space-around
+
+  .attention-box
+    margin: 0 0 40px
+
+  .box-profile
+    margin: 0 0 20px
+
+  .wrapper
+    padding: 0 0 0 20px
+
+@media only screen and (max-width: 1040px)
+  .btn-filter
+    display: flex
+
+  .section-page
+    .sidebar
+      display: none
+    .wrapper
+      padding: 0
+      width: 100%
+
+  .form-box
+    max-width: 350px
+
+
 
 @media only screen and (max-width: 1020px)
   header .navigation
@@ -193,6 +258,61 @@
   .slider__content
     margin: 38px 0 46px
 
+  .photo-upload
+    max-width: 240px
+    height: 240px
+    padding: 28px 30px 40px
+    .icon-photo
+      width: 85px
+      height: 85px
+      margin: 0 auto 40px
+
+  .form-document
+    margin: 50px 0
+
+  .main-profile__form .input-group input
+    margin: 0 0 19px
+
+  .main-profile__form button
+    margin: 49px auto 0
+
+  .purchases-table__body .line
+    font-size: 15px
+    padding: 11px 28px
+
+  .search-result h1
+    font-size: 22px
+    margin: 0 0 17px
+    font-family: $default
+
+  .search-result
+    padding: 22px
+
+  .form-search label input
+    height: 44px
+    padding: 0 116px 0 20px
+    font-size: 16px
+
+  .form-search button
+    height: 44px
+    font-size: 15px
+    width: 116px
+
+  .section-page
+    .sidebar
+      width: 100%
+
+  .section-page
+    .cosmetology-content
+      justify-content: space-around
+
+  .archive
+    margin: 0
+
+  .course__slider .product-box
+    margin: 0 auto 40px
+
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 920px)
   .footer-box
@@ -218,6 +338,11 @@
     padding: 61px 0 52px
     .btn
       margin: 52px auto 0
+      width: 250px
+      height: 55px
+      font-size: 16px
+      border-radius: 27.5px
+
 
   .page-video
     .sidebar
@@ -252,11 +377,15 @@
   .page-video__details
     margin: 0 0 45px
 
-  .title-box
-    font-size: 25px
 
   .add-comment textarea
     font-size: 15px
+
+  .main-videos__content
+    padding: 57px 20px 55px
+
+  .webinar .product-box
+    margin: 0 auto 20px
 
 
 @media only screen and (max-width: 810px)
@@ -426,6 +555,76 @@
     bottom: 8px
     font-size: 10px
 
+  .main-profile__form label input
+    width: 279px
+
+  .wrapper
+    width: 100%
+    padding: 0
+    margin: 55px 0 0 0
+
+  .menu-cabinet li
+    margin: 0 0 31px
+
+  .list-check
+    margin: 20px 0 40px
+    li
+      margin: 0 0 18px
+
+  .sidebar
+    max-width: none
+
+  .btn-subscribe
+    font-size: 18px
+
+  .attention-box
+    margin: 0 0 46px
+
+  .box-profile
+    width: 210px
+    height: 169px
+    font-size: 14px
+    .icon
+      width: 56px
+      height: 56px
+      margin: 0 auto 24px
+
+  .purchases-table__body .status-subscribe
+    min-width: 190px
+
+  .status-subscribe
+    min-width: 215px
+
+  .section-page .product-box .product-box__text
+    .it-category
+      position: relative
+      left: 0
+      top: 0
+      width: 170px
+      height: auto
+      text-align: left
+      padding: 7px 12px
+      border-radius: 4px
+    .video-course__box-title
+      margin: 0 0 17px
+
+  .btn-filter
+    margin: 0
+
+  .form-box
+    max-width: none
+    margin: 0 0 28px
+    &:last-child
+      margin: 0
+
+  .form textarea
+    height: 342px
+
+  .form button
+    margin: 22px auto 28px
+
+  .main-videos__content
+    padding: 27px 20px 68px
 
 @media only screen and (max-width: 768px)
   .main-slider__box.slick-slide
@@ -492,7 +691,6 @@
 
   .webinar .product-box
     max-width: 210px
-    margin: 0 0 43px
     .product-box__image
       height: 119px
     h3
@@ -502,6 +700,52 @@
     margin: 0 0 29px
     font-size: 30px
 
+  .photo-upload
+    max-width: 440px
+    height: 440px
+    margin: 47px 0 0
+    justify-content: center
+    align-items: center
+    .icon-photo
+      width: 130px
+      height: 130px
+      margin: 0 auto 56px
+    .photo-label
+      width: 213px
+
+  .form-document
+    margin: 47px 0
+    padding: 26px 21px
+    strong
+      font-size: 16px
+    .img-size
+      font-size: 15px
+
+  .main-profile__form .input-group
+    max-width: 279px
+
+  .modal__div
+    width: 440px
+    .modal__wrapper
+      border-radius: 6px
+
+  .modal__div form label input
+    padding: 0 129px 0 20px
+
+  .modal__div .modal-line
+    width: 100%
+
+  #subscribe__modal .modal__wrapper
+    padding: 42px 20px 52px
+    h2
+      font-size: 35px
+
+  .list-subscribe li a
+    padding: 22px 18px
+    font-size: 16px
+
+  .course__slider .product-box
+    margin: 0 auto 40px
 
 
 @media only screen and (max-width: 680px)
@@ -529,6 +773,17 @@
     width: 323px
     left: -196px
     bottom: -40px
+
+
+
+  .search-result
+    h1
+      display: none
+    .text-mobile
+      display: block
+
+  .form-search label input
+    padding: 0 116px 0 18px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 620px)
@@ -680,7 +935,14 @@
   .answer-comment
     padding: 12px 19px 25px 16px
 
+  .modal__div .btn-subscribe
+    font-size: 16px
 
+  .purchases-table__body .line
+    margin: 0 0 20px
+
+  .title-box
+    font-size: 25px
 
 @media only screen and (max-width: 460px)
   .logo
@@ -766,6 +1028,77 @@
     align-items: center
     .links
       margin: 0 auto 10px
+
+  .main-profile__form label input
+    width: 100%
+
+  .main-profile__form .form-box
+    width: 100%
+    label
+      flex-direction: column
+      align-items: flex-start
+      .text
+        min-width: auto
+        margin: 0 0 10px
+
+  .photo-upload
+    max-width: none
+    height: 300px
+    .icon-photo
+      width: 90px
+      height: 90px
+      margin: 0 auto 30px
+
+  .main-profile__form .input-group
+    max-width: none
+
+  .main-profile__form .form-box__password .text
+    margin: 0 0 10px
+    min-width: auto
+    width: 100%
+
+  .box-profile
+    width: 130px
+    height: 130px
+    font-size: 13px
+    .icon
+      width: 40px
+      height: 40px
+      margin: 0 auto 20px
+
+  .attention-box
+    .text
+      font-size: 13px
+
+  .modal__div
+    width: 100%
+    .modal__wrapper
+      padding: 46px 21px 32px
+
+  .modal__div .modal-line
+    padding: 0
+
+  .price
+    font-size: 20px
+
+  .currency
+    width: 11px
+    height: 14px
+
+  .purchases-table__body .status-subscribe
+    min-width: 130px
+    max-width: 130px
+    text-align: right
+    justify-content: flex-end
+
+  .status-subscribe
+    min-width: 155px
+    max-width: 155px
+
+  .status-subscribe .btn
+    margin: 5px auto 0
+
+
 
 
 

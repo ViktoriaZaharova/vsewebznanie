@@ -25,8 +25,62 @@
 
 <body>
 
+<div class="mobile-menu">
+    <div class="mobile-menu__wrapper">
+        <div class="mobile-menu__home">
+            <div class="top-line">
+                <div class="btn-close"><img src="img/close2.svg" alt=""></div>
+                <div class="header-nav">
+                    <a href="#" class="btn-search"><img src="img/search2.svg" alt=""></a>
+
+                    <div class="favorite-box">
+                        <a href="#" class="btn-favorite"><img src="img/favorite2.svg" alt=""></a>
+                        <div class="quantity">2</div>
+                    </div>
+
+                    <a href="#" class="btn-user"><img src="img/user2.svg" alt=""></a>
+                </div>
+            </div>
+            <ul class="menu">
+                <li class="drop-item">
+                    <a href="#" class="drop-item__link">Видеокурсы
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 16">
+    <polyline points="2 14 7 8 2 2"/>
+</svg>
+                        </span>
+                    </a>
+                </li>
+                <li><a href="#">Вебинары</a></li>
+                <li><a href="#">Трансляции</a></li>
+                <li><a href="#">Индивидуальное обучение</a></li>
+            </ul>
+
+            <a href="#" class="btn btn-accent">Подключить подписку</a>
+        </div>
+
+        <div class="mobile-menu__submenu">
+            <div class="top-line">
+                <div class="btn-next"><img src="img/btn-next.svg" alt=""></div>
+            </div>
+            <ul class="dropdown-menu">
+                <li><a href="#">Инъекционная косметология</a></li>
+                <li><a href="#">Нити</a></li>
+                <li><a href="#">Пластическая хирургия</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
 <header>
     <div class="container">
+        <div class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <a href="index.html" class="logo">
             <img src="img/logo.svg" alt="">
         </a>
@@ -62,7 +116,100 @@
     </div>
 </header>
 
-<div class="webinar mb-75">
+<div class="filter-mobile">
+    <div class="filter-close"><img src="img/close2.svg" alt=""></div>
+    <div class="filter-mobile__wrapper">
+        <div class="scroll-block">
+            <ul class="menu-category">
+                <li><a href="#" class="active">
+                    <span class="icon"><img src="img/icon-cat1.svg" alt=""></span><span
+                        class="text">Инъекционная косметология</span><span
+                        class="val">355</span>
+                </a></li>
+                <li><a href="#">
+                    <span class="icon"><img src="img/icon-cat2.svg" alt=""></span><span
+                        class="text">Нити</span><span
+                        class="val">154</span>
+                </a></li>
+                <li><a href="#">
+                    <span class="icon"><img src="img/icon-cat3.svg" alt=""></span><span class="text">Пластическая хирургия</span><span
+                        class="val">45</span>
+                </a></li>
+            </ul>
+
+            <div class="filter-wrapper">
+                <div class="filter-box">
+                    <h3>Область применения</h3>
+                    <label class="checkbox">
+                        <input class="checkbox-inp" type="checkbox" name="checkbox">
+                        <span class="checkbox-custom"></span>
+                        <span class="label">Лоб</span>
+                    </label>
+                    <label class="checkbox">
+                        <input class="checkbox-inp" type="checkbox" name="checkbox">
+                        <span class="checkbox-custom"></span>
+                        <span class="label">Губы</span>
+                    </label>
+                    <label class="checkbox">
+                        <input class="checkbox-inp" type="checkbox" name="checkbox">
+                        <span class="checkbox-custom"></span>
+                        <span class="label">Щёки</span>
+                    </label>
+                    <label class="checkbox">
+                        <input class="checkbox-inp" type="checkbox" name="checkbox">
+                        <span class="checkbox-custom"></span>
+                        <span class="label">Межбровные морщины</span>
+                    </label>
+                    <label class="checkbox">
+                        <input class="checkbox-inp" type="checkbox" name="checkbox">
+                        <span class="checkbox-custom"></span>
+                        <span class="label">Нос</span>
+                    </label>
+                    <a href="#" class="links color-blue btn-all">Весь список (12)</a>
+                </div>
+
+                <div class="filter-box">
+                    <h3>Автор курса</h3>
+                    <label class="checkbox">
+                        <input class="checkbox-inp" type="checkbox" name="checkbox">
+                        <span class="checkbox-custom"></span>
+                        <span class="label">Бендлин И.Д.</span>
+                    </label>
+                    <label class="checkbox">
+                        <input class="checkbox-inp" type="checkbox" name="checkbox">
+                        <span class="checkbox-custom"></span>
+                        <span class="label">Сафина Г.И.</span>
+                    </label>
+                    <label class="checkbox">
+                        <input class="checkbox-inp" type="checkbox" name="checkbox">
+                        <span class="checkbox-custom"></span>
+                        <span class="label">Михина А.А.</span>
+                    </label>
+                </div>
+
+                <div class="filter-box">
+                    <h3>Год выпуска</h3>
+                    <label class="select">
+                        <select name="select">
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                        </select>
+                    </label>
+                </div>
+
+                <a href="#" class="btn btn-accent">Применить</a>
+
+                <a href="#" class="links-clear">
+                    <span class="icon"></span>
+                    <span class="text">Сбросить значения</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="webinar mb-75 section-page">
     <div class="container">
         <ul class="breadcrumbs">
             <li><a href="index.html">Главная страница</a></li>
@@ -70,6 +217,12 @@
         </ul>
 
         <h1>Вебинары</h1>
+
+        <div class="btn-filter color-blue">
+            <div class="icon"><img src="img/filter.png" alt=""></div>
+            <div class="text">Показать фильтр</div>
+        </div>
+
 
         <div class="webinar-content">
             <div class="sidebar">
@@ -409,6 +562,8 @@
         <a href="#" class="btn btn-accent">Подключить подписку</a>
     </div>
 </footer>
+
+<div class="overlay"></div>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>

@@ -1115,7 +1115,6 @@ h1
     a
       display: flex
       align-items: center
-      flex-wrap: wrap
       justify-content: space-between
       padding: 14px 12px
       width: 100%
@@ -1126,6 +1125,7 @@ h1
         margin: 0 0 0 auto
         opacity: .7
       .icon
+        min-width: 15px
         width: 15px
         height: 15px
         display: flex
@@ -1400,7 +1400,7 @@ select
   justify-content: space-between
   label
     width: 100%
-    margin: 0 0 31px
+    margin: 0 0 28px
     &:last-child
       margin: 0
   input
@@ -1607,7 +1607,6 @@ select
     display: flex
     align-items: center
     justify-content: space-between
-    flex-wrap: wrap
     border-radius: 6px
     background: #fff
     padding: 11px 30px 11px 29px
@@ -1785,7 +1784,7 @@ select
     display: flex
     align-items: center
     justify-content: center
-    min-width: 31px
+    min-width: 30px
     background: rgba(#fa3e3e, .3)
     margin: 0 19px 0 0
     &:before
@@ -1818,6 +1817,7 @@ select
   justify-content: space-between
 
 .box-profile
+  text-align: center
   display: flex
   flex-direction: column
   align-items: center
@@ -2519,6 +2519,76 @@ select
 
 .related-videos__slider
   width: 100%
+
+.text-mobile
+  display: none
+
+.btn-filter
+  display: none
+  align-items: center
+  justify-content: flex-start
+  font-size: 17px
+  margin: 0 0 36px
+  font-family: $medium
+  .icon
+    width: 25px
+    height: 16px
+    margin: 0 12px 0 0
+
+.course__slider
+  .product-box
+    margin: 0 auto
+
+.filter-mobile
+  position: fixed
+  z-index: 8
+  left: 0
+  top: 0
+  height: 100%
+  background: #ecf4f8
+  padding: 45px 42px 45px 23px
+  max-width: 400px
+  width: 100%
+  display: none
+
+.filter-mobile__wrapper
+  height: 100%
+  margin: 29px 0 0 0
+  overflow-y: auto
+  transform: scaleX(-1)
+  &::-webkit-scrollbar
+    width: 9px
+    height: 9px
+    border-radius: 4.5px
+  &::-webkit-scrollbar-track
+    background-color: #b8ced8
+    border-radius: 4.5px
+  &::-webkit-scrollbar-track-piece
+    background-color: #ecf4f8
+    border-radius: 4.5px
+  &::-webkit-scrollbar-thumb
+    background-color: #b8ced8
+    border-radius: 4.5px
+  &::-webkit-scrollbar-corner
+    background-color: #ecf4f8
+    border-radius: 4.5px
+  &::-webkit-resizer
+    background-color: #b8ced8
+    border-radius: 4.5px
+  .scroll-block
+    transform: scaleX(-1)
+    padding: 0 0 20px 26px
+
+
+.filter-close
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 17px
+  height: 17px
+  cursor: pointer
+
+
 
 
 @import "media"

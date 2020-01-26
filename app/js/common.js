@@ -67,7 +67,21 @@ $(document).ready(function () {
         slidesToShow: 3,
         prevArrow: '<button type="button" class="slick-prev"></button>',
         nextArrow: '<button type="button" class="slick-next"></button>',
-        appendArrows: '.course__nav'
+        appendArrows: '.course__nav',
+        responsive: [
+            {
+                breakpoint: 680,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 460,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
     $('.slider__content').slick({
@@ -146,6 +160,16 @@ $(document).ready(function () {
     $('.btn-close').click(function () {
         $('.overlay').fadeOut();
         $('.mobile-menu').fadeOut();
+    });
+
+    $('.btn-filter').click(function () {
+        $('.overlay').fadeIn();
+       $('.filter-mobile').fadeIn();
+    });
+
+    $('.filter-close').click(function () {
+        $('.overlay').fadeOut();
+        $('.filter-mobile').fadeOut();
     });
 });
 
